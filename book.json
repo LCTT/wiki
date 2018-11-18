@@ -3,5 +3,10 @@
 	"structure": {
 		"readme": "index.md"
 	},
-	"language":"zh-hans"
+	"language": "zh-hans",
+	"pluginsConfig": {
+		"theme-default": {
+			"showLevel": true
+		}
+	}
 }
