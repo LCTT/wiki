@@ -31,4 +31,4 @@
 * 历代记
 
 ## 修改 Wiki
-* 如何贡献本文档
+* [如何贡献本文档](edit-this-document.md)
