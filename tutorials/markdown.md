@@ -1,4 +1,4 @@
-### Markdown 语法
+# Markdown 语法
 
 我们使用 Github 作为托管平台，使用的 markdown 也是 GitHub flavor 的。
 
@@ -15,11 +15,11 @@
     * 删除线
 * 图片
     * 来源于网络的图片
-    * GitHub仓库中的图片
+    * GitHub 仓库中的图片
 * 链接
     * 文字超链接
-        * 链接外部URL
-        * 链接本仓库里的URL
+        * 链接外部 URL
+        * 链接本仓库里的 URL
     * 锚点
     * 图片链接
 * 列表
@@ -30,4 +30,4 @@
 * 代码高亮
 * 表格
 * 表情
-* diff语法
+* diff 语法
