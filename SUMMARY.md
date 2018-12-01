@@ -4,7 +4,6 @@
 * [LCTT 介绍](intro/lctt.md)
 
 ## 翻译入门
-
 * [从翻译到发布](guide/zero2one.md)
 * [翻译步骤](guide/translate_procedures.md)
 	* [web](guide/ops_web.md)
@@ -16,17 +15,14 @@
 * [校对步骤](guide/proofread.md)
 
 ## LCTT 商城
-
 * [商城介绍](online-store/intro.md)
 * 如何获取 LCCN
 * 如何兑换礼品
 
 ## FAQ
-
 * [常见问题列表](faq/faq.md)
 
 ## 参与者
-
 * [贡献者列表和排名](contributors/list.md)
 * LCTT 项目情况
 * 历代记
