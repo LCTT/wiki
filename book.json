@@ -1,12 +1,12 @@
 {
-	"title": "LCTT Wiki",
-	"structure": {
-		"readme": "index.md"
-	},
-	"language": "zh-hans",
-	"pluginsConfig": {
-		"theme-default": {
-			"showLevel": true
-		}
-	}
+    "title": "LCTT Wiki",
+    "structure": {
+        "readme": "index.md"
+    },
+    "language": "zh-hans",
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        }
+    }
 }

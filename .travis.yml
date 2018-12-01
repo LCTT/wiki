@@ -17,10 +17,6 @@ install:
 script:
   - gitbook build . ./build
 
-branches:
-  only:
-    - master
-
 deploy:
   provider: pages
   skip_cleanup: true
