@@ -1,26 +1,34 @@
-language: node_js
-
-node_js:
-  - "8"
-
-cache:
-  directories:
-    - $HOME/.npm
-
 before_install:
   - export TZ='Asia/Shanghai'
 
-install:
-  - npm install gitbook-cli -g
-  - gitbook install
+stages:
+  - lint
+  - build
 
-script:
-  - gitbook build . ./build
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: lint
+      language: ruby
+      install:
+        - gem install mdl
+      script:
+        - mdl .
+    - stage: build
+      language: node_js
+      node_js:
+        - "8"
+      install:
+        - npm install gitbook-cli -g
+        - gitbook install
+      cache:
+        directories:
+          - $HOME/.npm
+      script:
+        - gitbook build . ./build
+      deploy:
+      provider: pages
+      skip_cleanup: true
+      github_token: $GITHUB_TOKEN
+      local_dir: build
+      on:
+        branch: master
