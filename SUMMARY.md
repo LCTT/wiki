@@ -16,8 +16,8 @@
 
 ## LCTT 商城
 * [商城介绍](online-store/intro.md)
-* 如何获取 LCCN
-* 如何兑换礼品
+* [如何获取 LCCN](online-store/how-to-get-lccn.md)
+* [如何兑换礼品](online-store/how-to-get-gift.md)
 
 ## FAQ
 * [常见问题列表](faq/faq.md)
