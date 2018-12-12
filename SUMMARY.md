@@ -6,10 +6,10 @@
 ## 翻译入门
 * [从翻译到发布](guide/zero2one.md)
 * [翻译步骤](guide/translate_procedures.md)
-	* [web](guide/ops_web.md)
-	* [桌面](guide/ops_local.md)
+    * [web](guide/ops_web.md)
+    * [桌面](guide/ops_local.md)
 * [翻译帮助](guide/help/)  <!-- 如常见词列表 -->
-* [GIT 基础操作](tutorials/gitbasic.md)
+* [git 基础操作](tutorials/gitbasic.md)
 * [markdown 语法](tutorials/markdown.md)
 * [选题步骤](guide/topics.md)
 * [校对步骤](guide/proofread.md)
