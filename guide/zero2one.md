@@ -45,6 +45,5 @@
 
 文章发布后，会通过 LCCN 激励平台，对译者、校对等进行激励，关于此部分，请参阅 [LCCN 在线商城](../online-store.md)。
 
-
 [^1]: PR，即<ruby>拉取请求<rt>Pull Request</rt></ruby>，是GitHub 的协作模式。
-[^2]: CI，即<ruby>持续集成<rt>Continuous integration</rt></ruby>，是一种自动对代码进行检查和构建的机制，我们用来做合规性检查
+[^2]: CI，即<ruby>持续集成<rt>Continuous integration</rt></ruby>，是一种自动对代码进行检查和构建的机制，我们用来做合规性检查。
