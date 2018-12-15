@@ -4,6 +4,4 @@
 
 ![](../images/store_images/home_page.jpg)
 
-
-
 商城地址：https://shop.linux.cn/
