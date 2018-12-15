@@ -39,7 +39,11 @@
 
 ## 选题源
 
-当前的选题采集来源在此 [issue](https://github.com/LCTT/TranslateProject/issues/9476) 里面列出。大家也可以根据上述的选题标准来建议新的、稳定的选题源。
+当前的选题采集来源：
+
+- 待列出。
+
+大家也可以根据上述的选题标准来[建议](https://github.com/LCTT/TranslateProject/issues/9476)新的、稳定的选题源。
 
 [^1]: PR，即<ruby>拉取请求<rt>Pull Request</rt></ruby>，是GitHub 的协作模式。
 [^2]: CI，即<ruby>持续集成<rt>Continuous integration</rt></ruby>，是一种自动对代码进行检查和构建的机制，我们用来做合规性检查
