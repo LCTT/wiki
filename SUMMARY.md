@@ -6,18 +6,18 @@
 ## 翻译入门
 * [从翻译到发布](guide/zero2one.md)
 * [翻译步骤](guide/translate_procedures.md)
-	* [web](guide/ops_web.md)
-	* [桌面](guide/ops_local.md)
+    * [web](guide/ops_web.md)
+    * [桌面](guide/ops_local.md)
 * [翻译帮助](guide/help/)  <!-- 如常见词列表 -->
-* [GIT 基础操作](tutorials/gitbasic.md)
+* [git 基础操作](tutorials/gitbasic.md)
 * [markdown 语法](tutorials/markdown.md)
 * [选题步骤](guide/topics.md)
 * [校对步骤](guide/proofread.md)
 
 ## LCTT 商城
 * [商城介绍](online-store/intro.md)
-* 如何获取 LCCN
-* 如何兑换礼品
+* [如何获取 LCCN](online-store/how-to-get-lccn.md)
+* [如何兑换礼品](online-store/how-to-get-gift.md)
 
 ## FAQ
 * [常见问题列表](faq/faq.md)
