@@ -25,7 +25,7 @@
 
 * [常见问题列表](faq/faq.md)
 * [中文排版指北](tutorials/copywriting.md)
-* [选题模板](guide/topic_tmpl.txt)
+* [选题模板](guide/topic_tmpl.md)
 
 ## 项目情况
 
