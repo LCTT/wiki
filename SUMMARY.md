@@ -21,9 +21,11 @@
 * [如何获取 LCCN](online-store/how-to-get-lccn.md)
 * [如何兑换礼品](online-store/how-to-get-gift.md)
 
-## FAQ
+## 参考
 
 * [常见问题列表](faq/faq.md)
+* [中文排版指北](tutorials/copywriting.md)
+* [选题模板](guide/topic_tmpl.txt)
 
 ## 项目情况
 
@@ -31,6 +33,6 @@
 * [LCTT 项目状态](https://lctt.github.io/)
 * [历代记](http://github.com/LCTT/TranslateProject/README.md)
 
-## 修改 Wiki
+## 修改此 Wiki
 
 * [如何贡献本文档](edit-this-document.md)
