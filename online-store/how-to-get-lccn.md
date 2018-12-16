@@ -12,11 +12,11 @@ LCTT 贡献激励平台地址：https://lctt.linux.cn/
 
 ![](../images/store_images/login_by_github.jpg)
 
-点击界面中的「钱包」链接，前往设置你自己的 ETH 钱包地址
+点击界面中的「钱包」链接，前往设置你自己的 ETH 钱包地址。
 
 ![](../images/store_images/user_center.jpg)
 
-在钱包页面你可以看到下面这样的界面
+在钱包页面你可以看到下面这样的界面。
 
 ![](../images/store_images/wallet_screen.jpg)
 
@@ -36,8 +36,6 @@ LCTT 贡献激励平台地址：https://lctt.linux.cn/
 
 ![](../images/store_images/get_wallet_address.jpg)
 
-
-
 找到钱包地址后，将其填入下方的设置框中，并在备注框内填入你的 Github 用户名，以关联你在 Github 上的信息，然后提交即可。
 
 ![](../images/store_images/set_wallet.jpg)
@@ -46,11 +44,7 @@ LCTT 贡献激励平台地址：https://lctt.linux.cn/
 
 ![](../images/store_images/check_wallet_address.jpg)
 
-
-
 接下来，你只需要等待平台定期的 Token 转账即可了。
-
-
 
 ## FAQ
 

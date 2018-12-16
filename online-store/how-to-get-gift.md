@@ -12,11 +12,11 @@
 
 ![](../images/store_images/register_email.jpg)
 
-点击设置的链接，即可设置你的用户密码,并使用该密码登陆。
+点击设置的链接，即可设置你的用户密码，并使用该密码登录。
 
 ## 选购礼品
 
-点击菜单栏中的「商店」，回到商店首页，找到你想要兑换的礼品，点击「加入购物车」
+点击菜单栏中的「商店」，回到商店首页，找到你想要兑换的礼品，点击「加入购物车」。
 
 ![](../images/store_images/add_item_to_cart.jpg)
 
@@ -25,8 +25,6 @@
 ![](../images/store_images/checkout_screen.jpg)
 
 填写必要的收货信息，点击「使用 Token 完成支付」，会跳转到结算页面。
-
-
 
 在结算页面向下拖动，可以找到「使用 Metamask 支付订单」，点击「打开 Metamask 支付」，会自动唤起 MetaMask 进行支付。
 
