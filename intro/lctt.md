@@ -1,10 +1,10 @@
 # 简介
 
-[LCTT](https://linux.cn/lctt/) 是“Linux 中国”（[https://linux.cn/](https://linux.cn/)）的翻译组，负责从国外优秀媒体翻译 Linux 相关的技术、资讯、杂文等内容。
+[LCTT](https://linux.cn/lctt/) 是“Linux 中国”（[https://linux.cn/](https://linux.cn/)）的翻译组，主要活动为从国外优秀媒体翻译 Linux 相关的技术、资讯、杂文等内容。
 
-LCTT 已经拥有几百名活跃成员，并欢迎更多的 Linux 志愿者加入我们的团队。
+LCTT 已经拥有几百名活跃成员，并欢迎更多的 Linux 爱好者和开源贡献志愿者加入我们的团队。
 
-![logo](https://linux.cn/static/image/common/lctt_logo.png)
+![LCTT](../images/lctt_logo.png)
 
 ## LCTT 的组成
 
