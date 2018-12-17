@@ -1,0 +1,16 @@
+# 检查 git 跟踪的文件
+git_recurse true
+
+rules "MD001", "MD003", "MD004", "MD005", "MD006", "MD008", "MD009", "MD010", "MD011", "MD012", "MD014", "MD015", "MD016", "MD017", "MD018", "MD019", "MD020", "MD021", "MD023", "MD024", "MD025", "MD027", "MD028", "MD030", "MD035", "MD038", "MD039", "MD040", "MD041", "MD042"
+exclude "MD002" # First header should be a top level header，暂不检查一级标题
+exclude "MD007" # Unordered list indentation，忽略四个空格的子列表缩进
+exclude "MD013" # Line length，长度允许超过 80
+exclude "MD022" # Headers should be surrounded by blank lines，允许连续标题不换行
+exclude "MD026" # Trailing punctuation in header，标题中允许标点
+exclude "MD029" # Ordered list item prefix，允许递增数字列表
+exclude "MD031" # Fenced code blocks should be surrounded by blank lines，暂不处理代码块
+exclude "MD032" # Lists should be surrounded by blank lines，允许列表下有描述文字
+exclude "MD033" # Inline HTML，允许嵌入 HTML 元素
+exclude "MD034" # Bare URL used，允许裸 URL
+exclude "MD036" # Emphasis used instead of a header，允许着重符号，有时有些语句不适合做标题
+exclude "MD037" # Spaces inside emphasis markers，有时会错把乘号当成标记
