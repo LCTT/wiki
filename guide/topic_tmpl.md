@@ -48,9 +48,9 @@ via: 原文 链接 URL
 选题：[选题 ID][b]
 译者：[译者 ID](https://github.com/译者 ID)
 校对：[校对 ID](https://github.com/校对 ID)
-  
+
 本文由 [LCTT](https://github.com/LCTT/TranslateProject) 原创编译，[Linux中国](https://linux.cn/) 荣誉推出
-  
+
 [a]: 作者链接 URL
 [b]: 选题链接 URL
 [1]: 图片链接地址
