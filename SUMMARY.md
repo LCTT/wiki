@@ -31,7 +31,7 @@
 
 * [贡献者列表和排名](https://linux.cn/lctt-list/)
 * [LCTT 项目状态](https://lctt.github.io/)
-* [历代记](http://github.com/LCTT/TranslateProject/README.md)
+* [历代记](https://github.com/LCTT/TranslateProject/blob/master/README.md)
 
 ## 修改本 Wiki
 
