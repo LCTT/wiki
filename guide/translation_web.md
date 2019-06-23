@@ -38,7 +38,7 @@
 
 ![选择 “LCTT/TranslateProject”](../images/guide_images/update_repo2.jpg)
 
-这时该页面会刷新，并显示没有差异，请点击右上角的 “compare cross forks” 链接：
+这时该页面会刷新，并显示没有差异，请点击右上角的 “compare across forks” 链接：
 
 ![点击 “compare cross forks” 链接](../images/guide_images/update_repo3.jpg)
 
