@@ -34,7 +34,7 @@
 
 ![点击 “New pull request” 按钮](../images/guide_images/update_repo1.jpg)
 
-在显示 “Comaring changes” 页面，点击右侧如图所示的下拉菜单，选择 “LCTT/TranslateProject”：
+在显示 “Comparing changes” 页面，点击右侧如图所示的下拉菜单，选择 “LCTT/TranslateProject”：
 
 ![选择 “LCTT/TranslateProject”](../images/guide_images/update_repo2.jpg)
 
