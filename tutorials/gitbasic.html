@@ -1,0 +1,628 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Git 基础操作 · LCTT Wiki</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="markdown.html" />
+    
+    
+    <link rel="prev" href="../guide/help" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/lctt.html">
+            
+                <a href="../intro/lctt.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    LCTT 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">翻译入门</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../guide/zero2one.html">
+            
+                <a href="../guide/zero2one.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    从翻译到发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../guide/translation.html">
+            
+                <a href="../guide/translation.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    翻译步骤
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../guide/translation_web.html">
+            
+                <a href="../guide/translation_web.html">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../guide/translation_local.html">
+            
+                <a href="../guide/translation_local.html">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    桌面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../guide/help">
+            
+                <span>
+            
+                    
+                        <b>2.3.</b>
+                    
+                    翻译帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="gitbasic.html">
+            
+                <a href="gitbasic.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Git 基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="markdown.html">
+            
+                <a href="markdown.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    Markdown 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../guide/selection.html">
+            
+                <a href="../guide/selection.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    选题步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../guide/review.html">
+            
+                <a href="../guide/review.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    校对步骤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">LCTT 商城</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../online-store/intro.html">
+            
+                <a href="../online-store/intro.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    商城介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../online-store/how-to-get-lccn.html">
+            
+                <a href="../online-store/how-to-get-lccn.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    如何获取 LCCN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../online-store/how-to-get-gift.html">
+            
+                <a href="../online-store/how-to-get-gift.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    如何兑换礼品
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    常见问题列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="copywriting.html">
+            
+                <a href="copywriting.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    中文排版指北
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../guide/topic_tmpl.html">
+            
+                <a href="../guide/topic_tmpl.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    选题模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">项目情况</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <a target="_blank" href="https://linux.cn/lctt-list/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    贡献者列表和排名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <a target="_blank" href="https://lctt.github.io/">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    LCTT 项目状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <a target="_blank" href="https://github.com/LCTT/TranslateProject/blob/master/README.md">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    历代记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">修改本 Wiki</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../edit-this-document.html">
+            
+                <a href="../edit-this-document.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    如何贡献本文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Git 基础操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="git-&#x57FA;&#x7840;&#x64CD;&#x4F5C;">git &#x57FA;&#x7840;&#x64CD;&#x4F5C;</h1>
+<p>&#x672C;&#x9875;&#x4E3B;&#x8981;&#x8BF4;&#x660E;&#x53C2;&#x4E0E;&#x7FFB;&#x8BD1;&#x6240;&#x9700;&#x7684; git &#x547D;&#x4EE4;&#x884C;&#x7684;&#x57FA;&#x7840;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5B66;&#x4E60;&#x66F4;&#x591A;&#x6280;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x5173;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x8BE5;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x5177;&#x4F53;&#x6587;&#x6863;&#x3002;</li>
+<li>&#x5173;&#x4E8E; git &#x547D;&#x4EE4;&#x884C;&#x5B8C;&#x6574;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x67E5;&#x9605; <code>man git</code> &#x53CA; <code>git help command</code>&#x3002;</li>
+<li>&#x66F4;&#x591A; git &#x6982;&#x5FF5;&#x53CA;&#x6280;&#x80FD;&#x8BF7;&#x53C2;&#x8003; <a href="https://git-scm.com/book/zh/v2" target="_blank">Pro Git</a>&#x3002;</li>
+</ul>
+<h2 id="&#x57FA;&#x7840;&#x914D;&#x7F6E;">&#x57FA;&#x7840;&#x914D;&#x7F6E;</h2>
+<h3 id="&#x7528;&#x6237;&#x4FE1;&#x606F;">&#x7528;&#x6237;&#x4FE1;&#x606F;</h3>
+<p>&#x4F7F;&#x7528; git &#x524D;&#x9700;&#x8981;&#x5148;&#x914D;&#x7F6E;&#x7528;&#x6237;&#x540D;&#x53CA;&#x90AE;&#x7BB1;&#x7B49;&#x57FA;&#x7840;&#x4FE1;&#x606F;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>git config --global user.name &quot;&#x5F20;&#x4E09;&quot;
+git config --global user.email &quot;zhangsan@example.com&quot;
+</code></pre><p><strong>&#x6CE8;&#x610F;&#xFF01;</strong>&#x4EE5;&#x4E0A;&#x547D;&#x4EE4;&#x4F1A;&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x5168;&#x5C40;&#x7684; git &#x4FE1;&#x606F;&#xFF0C;&#x5EFA;&#x8BAE;&#x5728; clone &#x4ED3;&#x5E93;&#x540E;&#x8FDB;&#x5165;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E2D;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code>git config user.name &quot;&#x5F20;&#x4E09;&quot;
+git config user.email &quot;zhangsan@example.com&quot;
+</code></pre><h3 id="ssh-key-&#x53CA;-gpg-key&#xFF08;&#x53EF;&#x9009;&#xFF09;">SSH key &#x53CA; GPG key&#xFF08;&#x53EF;&#x9009;&#xFF09;</h3>
+<p>&#x8BF7;&#x53C2;&#x8003; <a href="https://help.github.com/en/articles/connecting-to-github-with-ssh" target="_blank">GitHub SSH &#x5E2E;&#x52A9;&#x9875;&#x9762;</a>&#x8FDB;&#x884C;&#x8BBE;&#x7F6E; ssh key&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5728;&#x6BCF;&#x6B21; push &#x65F6;&#x514D;&#x9664;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x3002;</p>
+<p>GPG &#x53EF;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x53CA;&#x6570;&#x5B57;&#x7B7E;&#x540D;&#xFF0C;&#x8BF7;&#x53C2;&#x8003; <a href="https://help.github.com/en/articles/managing-commit-signature-verification" target="_blank">GitHub GPG key &#x5E2E;&#x52A9;&#x9875;&#x9762;</a>&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h2 id="clone-&#x4ED3;&#x5E93;">clone &#x4ED3;&#x5E93;</h2>
+<p>&#x5728;<ruby>&#x590D;&#x523B;<rt>fork</rt></ruby> <a href="https://github.com/LCTT/TranslateProject" target="_blank">LCTT/TranslateProject</a> <ruby>&#x4ED3;&#x5E93;<rt>repository</rt></ruby>&#x540E;&#xFF0C;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x4ED3;&#x5E93; clone &#x81F3;&#x672C;&#x5730;&#x3002;</p>
+<pre><code>git clone git@github.com:$YOUR_GITHUB_ID/TranslateProject.git
+</code></pre><p>&#x5982;&#x679C; clone &#x901F;&#x5EA6;&#x6BD4;&#x8F83;&#x6162;&#x53EF;&#x6DFB;&#x52A0; <code>--depth N</code> &#x53C2;&#x6570;&#x8FDB;&#x884C;<ruby>&#x6D45;&#x5C42;&#x514B;&#x9686;<rt>shallow clone</rt></ruby>&#xFF0C;N &#x8868;&#x793A;&#x4EC5;&#x4FDD;&#x7559;&#x6700;&#x65B0;&#x7684; N &#x6B21; commit&#x3002;&#x5982;&#xFF1A;</p>
+<pre><code>git clone --depth 1 git@github.com:$YOUR_GITHUB_ID/TranslateProject.git
+</code></pre><p>&#x8FD9;&#x6837;&#x4F1A;&#x628A;&#x4EC5;&#x5305;&#x542B;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x5B8C;&#x6574;&#x6587;&#x4EF6;&#x5217;&#x8868; clone &#x4E0B;&#x6765;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x6240;&#x6709;&#x7684; commit&#xFF0C;&#x53EF;&#x4EE5;&#x5230;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E2D;&#x6267;&#x884C; <code>git fetch --unshallow</code> &#x83B7;&#x53D6;&#x3002;</p>
+<h2 id="&#x5206;&#x652F;&#x64CD;&#x4F5C;">&#x5206;&#x652F;&#x64CD;&#x4F5C;</h2>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x53EA;&#x9700;&#x8981;&#x5728;&#x9ED8;&#x8BA4;&#x7684; master &#x5206;&#x652F;&#x4E0A;&#x5F00;&#x59CB;&#x7FFB;&#x8BD1;&#x5373;&#x53EF;&#x3002;<ruby>&#x5206;&#x652F;<rt>branch</rt></ruby>&#x662F; git &#x6700;&#x6838;&#x5FC3;&#x7684;&#x8BBE;&#x8BA1;&#x4E4B;&#x4E00;&#xFF0C;&#x7075;&#x6D3B;&#x4E14;&#x5F3A;&#x5927;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4EE5;&#x4E0B;&#x5EFA;&#x8BAE;&#x3002;</p>
+<p>&#x57FA;&#x4E8E;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>my_branch</code> &#x7684;&#x65B0;&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code>git checkout -b my_branch
+</code></pre><p>&#x4E5F;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x67D0;&#x4E2A; commit &#x521B;&#x5EFA;&#xFF08;<code>$COMMIT_ID</code> &#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A; commit ID&#xFF0C;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x540D;&#x6216;&#x4EFB;&#x610F;&#x6709;&#x6548;<ruby><rt>&#x7B26;&#x53F7;&#x6807;&#x8BC6;</rt>symblolic identifier</ruby>&#xFF09;&#xFF1A;</p>
+<pre><code>git checkout -b my_branch $COMMIT_ID
+</code></pre><p>&#x5207;&#x6362;&#x81F3;&#x67D0;&#x5206;&#x652F;&#x53EF;&#x4F7F;&#x7528; <code>git checkout some_branch</code>&#xFF0C;&#x5207;&#x6362;&#x56DE;&#x4E0A;&#x6B21;&#x6240;&#x5728;&#x7684;&#x5206;&#x652F;&#x53EF;&#x4F7F;&#x7528; <code>git checkout -</code>&#x3002;&#x66F4;&#x591A;&#x5206;&#x652F;&#x64CD;&#x4F5C;&#x8BF7;&#x53C2;&#x8003; <code>git help branch</code>&#xFF0C;<code>git help remote</code> &#x53CA; <code>git help checkout</code>&#x3002;</p>
+<h2 id="&#x63D0;&#x4EA4;&#x53D8;&#x66F4;">&#x63D0;&#x4EA4;&#x53D8;&#x66F4;</h2>
+<p>&#x5F53;&#x4F60;&#x8BA4;&#x4E3A;&#x5DE5;&#x4F5C;&#x8FDB;&#x5EA6;&#x5E94;&#x8BE5;&#x9636;&#x6BB5;&#x6027;&#x4FDD;&#x5B58;&#x65F6;&#x5E94;&#x8BE5;&#x8FDB;&#x884C;<ruby>&#x63D0;&#x4EA4;<rt>commit</rt></ruby>&#xFF0C;&#x63D0;&#x4EA4;&#x540E;&#x4F1A;&#x5C06;&#x4F60;&#x7684;&#x53D8;&#x66F4;&#x5B58;&#x5165;&#x672C;&#x5728; git &#x6570;&#x636E;&#x5E93;&#x3002;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x7684;&#x53D8;&#x66F4;&#x662F;&#x5426;&#x6EE1;&#x610F;&#xFF0C;&#x6EE1;&#x610F;&#x7684;&#x8BDD;&#x7528; <code>git add xxx</code> &#x6DFB;&#x52A0;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;&#x3002;</p>
+<pre><code>git commit
+</code></pre><p>&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x540E;&#x4F1A;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x8BA9;&#x4F60;&#x586B;&#x5199;&#x8FD9;&#x6B21;&#x53D8;&#x66F4;&#x7684;&#x6982;&#x8981;&#x4FE1;&#x606F;&#x3002;&#x4E00;&#x822C;&#x53EA;&#x586B;&#x5199;&#x7B2C;&#x4E00;&#x884C;&#x6807;&#x9898;&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x6807;&#x9898;&#x4E0D;&#x8DB3;&#x4EE5;&#x63CF;&#x8FF0;&#x6E05;&#x695A;&#x6B64;&#x6B21;&#x53D8;&#x66F4;&#xFF0C;&#x8BF7;&#x9694;&#x4E00;&#x4E2A;&#x7A7A;&#x884C;&#x540E;&#x63CF;&#x8FF0;&#x53D8;&#x66F4;&#x7684;&#x6B63;&#x6587;&#x3002;&#x6709;&#x5174;&#x8DA3;&#x53EF;&#x4EE5;&#x4E86;&#x89E3; <a href="https://chris.beams.io/posts/git-commit/" target="_blank">How to Write a Git Commit Message</a>&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>git commit -m &quot;my commit message&quot;</code> &#x7F16;&#x5199;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x81EA;&#x5DF1;&#x7684;&#x64CD;&#x4F5C;&#x8DB3;&#x591F;&#x81EA;&#x4FE1;&#x7684;&#x8BDD;&#x3002;&#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x5728;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x7F16;&#x8F91; commit message&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x76F8;&#x5BF9;&#x66F4;&#x7A33;&#x59A5;&#x4E00;&#x4E9B;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>git config --global core.editor $YOUR_EDITOR</code> &#x6765;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x4F60;&#x719F;&#x6089;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x4F5C;&#x4E3A; git &#x9ED8;&#x8BA4;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x6709;&#x5FC5;&#x8981;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#xFF0C;&#x6BD4;&#x5982;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>git commit --amend</code> &#x6765;&#x4FEE;&#x6539;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7684;&#x5730;&#x65B9;&#x5F88;&#x591A;&#xFF0C;&#x5305;&#x62EC;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x90AE;&#x7BB1;&#xFF0C;&#x65F6;&#x95F4;&#x7B49;&#xFF0C;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x8003; <code>git help commit</code>&#x3002;</p>
+<h2 id="&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;">&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;</h2>
+<p>&#x524D;&#x9762;&#x6240;&#x63D0;&#x53CA;&#x64CD;&#x4F5C;&#x7684;&#x5F71;&#x54CD;&#x8303;&#x56F4;&#x90FD;&#x4EC5;&#x9650;&#x4E8E;&#x672C;&#x5730;&#xFF0C;&#x5F53;&#x4F60;&#x8BA4;&#x4E3A;&#x672C;&#x5730;&#x7684;&#x72B6;&#x6001;&#x5DF2;&#x6EE1;&#x610F;&#xFF0C;&#x53EF;&#x4EE5;<ruby>&#x63A8;&#x9001;<rt>push</rt></ruby>&#x5230;&#x8FDC;&#x7A0B;&#x4EE5;&#x53D1;&#x4FBF;&#x8D77;<ruby>&#x62C9;&#x53D6;&#x8BF7;&#x6C42;&#xFF08;PR&#xFF09;<rt>pull request</rt></ruby>&#x5C06;&#x4F60;&#x7684;&#x8D21;&#x732E;&#x5408;&#x5E76;&#x5230;<ruby>&#x4E0A;&#x6E38;<rt>upstream</rt></ruby>&#x4ED3;&#x5E93;&#x3002;</p>
+<pre><code>git push
+</code></pre><p>&#x5F53;&#x4F60;&#x5728; master &#x5206;&#x652F;&#x4E0A;&#x5DE5;&#x4F5C;&#x65F6;&#xFF0C;&#x8FD9;&#x6761;&#x7B80;&#x5355;&#x7684;&#x547D;&#x4EE4;&#x5C31;&#x591F;&#x7528;&#x4E86;&#x3002;&#x5F53;&#x4F60;&#x5728;&#x67D0;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x5DE5;&#x4F5C;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x5411;<ruby>&#x8FDC;&#x7A0B;&#x5206;&#x652F;<rt>remote branch</rt></ruby> &#x63A8;&#x9001;&#x65F6;&#x8981;&#x6307;&#x5B9A;&#x76EE;&#x6807;&#x5206;&#x652F;&#xFF1A;</p>
+<pre><code>git push origin my_branch
+</code></pre><h2 id="&#x5176;&#x5B83;">&#x5176;&#x5B83;</h2>
+<p>&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5B8C;&#x6574;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x8BF7;&#x4F7F;&#x7528; <code>git help command</code> &#x83B7;&#x53D6;&#x3002;</p>
+<h3 id="git-status"><code>git status</code></h3>
+<p>&#x8FD9;&#x5E94;&#x8BE5;&#x662F;&#x4F60;&#x7528;&#x7684;&#x6700;&#x591A;&#x7684;&#x4E00;&#x6761; git &#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x6CA1;&#x6709;&#x5371;&#x9669;&#x7684;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x3002;&#x5B83;&#x4F1A;&#x663E;&#x793A;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9;&#x4F60;&#x5F88;&#x591A;&#x63D0;&#x793A;&#x3002;</p>
+<h3 id="git-log"><code>git log</code></h3>
+<p>&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#xFF0C;&#x8BE5;&#x547D;&#x4EE4;&#x6709;&#x8D85;&#x591A;&#x9009;&#x9879;&#x53CA;&#x9009;&#x9879;&#x7EC4;&#x5408;&#x3002;</p>
+<h3 id="git-show"><code>git show</code></h3>
+<p>&#x67E5;&#x770B;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x67D0;&#x4E9B; commit &#x53CA;&#x4EFB;&#x610F;&#x6709;&#x6548;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<h3 id="git-diff"><code>git diff</code></h3>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x610F;&#x4E24;&#x79CD;&#x72B6;&#x6001;&#x6216; commit &#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x5DEE;&#x5F02;&#x5BF9;&#x6BD4;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>git config --global diff.tool $BETTER_DIFF_TOOL</code> &#x6765;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x66F4;&#x4E13;&#x4E1A;&#x7684; diff &#x5DE5;&#x5177;&#xFF0C;&#x7136;&#x540E;&#x7528; <code>git difftool</code> &#x6765;&#x67E5;&#x770B;&#x5E76;&#x4FEE;&#x6539;&#x5DEE;&#x5F02;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="git-fetch"><code>git fetch</code></h3>
+<p>&#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x5C06;&#x8FDC;&#x7A0B;&#x66F4;&#x65B0;&#x5408;&#x5E76;&#x5230;&#x672C;&#x5730;&#x3002;</p>
+<h3 id="git-pull"><code>git pull</code></h3>
+<p>&#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x66F4;&#x65B0;&#x5E76;&#x5C06;&#x8FDC;&#x7A0B;&#x66F4;&#x65B0;&#x5408;&#x5E76;&#x5230;&#x672C;&#x5730;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../guide/help" class="navigation navigation-prev " aria-label="Previous page: 翻译帮助">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="markdown.html" class="navigation navigation-next " aria-label="Next page: Markdown 语法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Git 基础操作","level":"2.4","depth":1,"next":{"title":"Markdown 语法","level":"2.5","depth":1,"path":"tutorials/markdown.md","ref":"tutorials/markdown.md","articles":[]},"previous":{"title":"翻译帮助","level":"2.3","depth":1,"path":"guide/help/","ref":"guide/help/","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LCTT Wiki","language":"zh-hans","gitbook":"*"},"file":{"path":"tutorials/gitbasic.md","mtime":"2020-04-27T08:13:39.671Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-27T08:14:25.696Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
