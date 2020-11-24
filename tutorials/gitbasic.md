@@ -1,34 +1,246 @@
 # git 基础操作
 
-本页主要说明参与翻译所需的 git 命令行的基础操作，如果你想学习更多技能：
+本教程希望能够在最短的时间内帮助你完成git的设置，开启你的翻译贡献之旅。
 
-* 关于客户端操作，请参考该客户端的具体文档。
-* 关于 git 命令行完整帮助，请查阅 `man git` 及 `git help command`。
-* 更多 git 概念及技能请参考 [Pro Git](https://git-scm.com/book/zh/v2)。
+## 安装Git
 
-## 基础配置
+首先判断你的操作系统：
 
+1. Windows 系统的话，请从[官网下载](https://gitforwindows.org/) ,并根据界面进行下一步下一步的安装。相关选项采取默认值就好。完成安装之后，系统上会多出类似这样的应用程序。
+
+![](../images/git_bash_logo.png)
+
+打开之后会可以看到Git Bash的默认页面。
+![](../images/git_bash_01.png)
+
+2. MacOS系统，应该已经自带了git的程序。
+
+3. Unix-Like系统：
+
+   3.1.  RPM-based distribution, such as RHEL or CentOS)
+
+   ```SHELL
+   # For CentOS 6  or  RHEL 6
+   yum -y install git
+   # For CentOS 7 or RHEL 7  or Fedora 32+
+   dnf -y install git
+   ```
+	3.2.  Debian-based distribution, such as Ubuntu
+   
+```shell
+   apt install git-all
+```
+> 更多 git 概念及技能请参考 [Pro Git](https://git-scm.com/book/zh/v2)。
+
+## 创建Fork
+简单来说就是把你要翻译发linux.cn的相关库，在github上面复制一份，到你的主页里面。
+这里我们拿[LCTT/LCRH](https://github.com/LCTT/LCRH)来举例:
+1. 登录[github](https://github.com)，然后打开[LCTT/LCRH](https://github.com/LCTT/LCRH)页面
+2. 点击页面中，右上角的Fork将LCTT账号相面的LCRH 库，复制到 自己的账号下一份。
+![](../images/lcct_lcrh_fork_button.png)
+
+如果你和我一样必须需要一个辅助的图片来帮助记录这些概念。请参考下面的图片
+
+![](../images/github_fork_repo_01.png)
+
+## 克隆Forked 的仓库到你的本地。
+在完成了仓库的Fork 之后，就可以将对应的仓库克隆到你的本地了
+![](../images/github_git_clone_forked_repo_01.png)
+如上图首先请确认，当前打开的页面确实是你个人账户的页面。之后点开那个绿色的Code按钮，在弹出的下拉菜单中选择HTTPS协议（我这边SSH不好使）之后点击后面的 复制按钮。将相关的连接复制到你的粘贴板上。
+
+打开Git Bash 或者其他终端，建立一个名字叫做Git的文件夹便于管理。之后执行如下命令
+```shell
+git clone https://github.com/FineFan/LCRH.git
+```
+![](../images/github_git_clone_01.png)
+
+之后就可以进入到该目录下面进行相关的配置和查看相关的信息了。
+
+
+
+## 查看相关配置，理解相关概念。
+首先让我们进入到刚刚clone下来的LCRH目录下，然后查看一下当前目录中有什么文件。
+![](../images/git_bash_02.png)
+
+这里我唯一想说的是隐藏的**.git**目录，该目录对于整个目录来说非常重要，因为他记录了当前目录下的相关配置。如果说我们是复制过来了整个仓库的话，那么.git就类似于仓库管理员住的小房子，里面记录着你从哪里复制过来的仓库，以及仓库中已经有的东西，和之前的一些变更记录等等。
+
+![](../images/git_bash_dot_git.png)
+
+### Remote 的概念
+
+有几个是我们需要在GitHub的PR 模式中使用到的，先来接受Rmote的概念。
+
+在你完成 git clone之后，他会创建一些默认的配置，其中一个就是Remote，简单来说就是说明你当前的仓库是从哪里来的。
+
+默认的远端 就叫做  **origin **
+
+当进入到clone 好的仓库中后，可以使用 如下命令进行查看。
+
+```shell
+git remote -v
+origin  https://github.com/FineFan/LCRH.git (fetch)
+origin  https://github.com/FineFan/LCRH.git (push)
+```
+
+如下图所示他会针对origin这个仓库返回两个条目 ，注意最后括号里面的内容 
+
+1. (fetch)  取货，往下抓代码
+2. (push)  推送，向上推送代码。
+
+
+
+![](../images/git_bash_remote_01.png)
+
+按照LCTT的仓库设置PR的模式进行相关的翻译工作的话，我们这就需要添加一个remote 指向LCTT的 LCRH仓库，方便日后更新同步。
+
+做法也简单，先找到上游仓库的地址。
+
+![](../images/LCTT_LCRH_git_url.png)
+
+然后在终端输入如下命令
+
+```shell
+git remote add upstream https://github.com/LCTT/LCRH.git
+```
+其中upstream 就是我们自己起的名字，换成其他字符串也可以，但是习惯做法是把上游的库都写成upstream。
+
+
+
+![](../images/git_bash_git_remote_add_updatream.png)
+
+图示如下，虽然针对 upstream的remote配置也有两条，但是由于权限设置问题，我们只能 往下抓代码，所以图中的箭头是单向的。
+
+![](../images/git_bash_git_remote_add_updatream02.png)
+
+### 分支
+
+当我们默认clone完成之后，我们得到了一堆文件。他们不仅仅是摆放在那里就完事了的。他们会被默认放到一个叫做master的分支当中，我更愿意把它想象成一个大树的树干。当我们进行编写代码（翻译）的时候往往会有很多的想法，我们可以把不同的想法，用分支 branch来进行管理。
+
+![](../images/wangdachui_branch.png)
+
+下面要讨论的就是 分支的 增、删、改、查、切换了。
+
+* 分支的查看：
+要如何查看我当前的目录下有哪些分支？ 
+
+```shell
+git branch -v
+```
+如果你刚刚完成git clone的话默认情况下应该只有master分支。
+使用Windows上面的git bash的话会在命令提示符上面就有显示当前的分支名称。
+在git branch -v 的输入中也能够看到前面带有星号的 就是目录树所在的分支快照。
+
+![](../images/git_bash_git_branch_01.png)
+
+是的我偷偷创建了两个新的分支branch_1 branch_2 然后在切换到 master分支来做演示。
+
+如果你也想这样做的话可以输入下面的命令
+
+* 分支的 增、切换：
+```shell
+git checkout -b branch_1
+git checkout -b branch_1
+git checkout master
+```
+
+分支之间的切换 很简单，就是使用 git checkout  <分支名称> 即可。
+![](../images/git_bash_git_checkout_branch_01.png)
+上图中可以看出，我当前的分支是master，然后切换到了 branch_1，之后又切换回了master分支。
+
+* 分支的 改：
+其实就是改个分支名称。
+如果手抖，分支名称写错了。
+比如下图，我是想创建 branch_3的 结果 手抖，多按了一个b就成了 bbranch_3
+![](../images/git_bash_git_checkout_branch_02.png)
+
+使用下面的命令可以让 bbranch_3  变成 branch_3
+
+```shell
+git branch -m bbranch_3  branch_3
+```
+![](../images/git_bash_git_branch_03.png)
+
+* 分支的 删：
+好吧玩的差不多了，在我们进行下面的操作之前，先让我们删除我们用来练习的 branch_1  branch_2  branch_3:
+```shell
+git checkout master #首先切换回  master分支
+git branch -d branch_1 # 删除分支 branch_1
+git branch -d branch_3 # 删除分支 branch_2
+git branch -d branch_2 # 删除分支 branch_3
+```
+![](../images/git_bash_git_branch_04.png)
+
+## 用户名 、 邮箱、 SSK Key 的配置
 ### 用户信息
 
 使用 git 前需要先配置用户名及邮箱等基础信息，示例如下。
 
 ```
-git config --global user.name "张三"
-git config --global user.email "zhangsan@example.com"
+cd LCRH
+git config --local user.name "Fine Fan"
+git config --local user.email "fine.fan@hotmail.com"
 ```
+完成之后可以通过如下命令查看一下
 
-**注意！**以上命令会设置系统全局的 git 信息，建议在 clone 仓库后进入项目目录中使用以下命令设置：
-
+```shell
+git config --list
 ```
-git config user.name "张三"
-git config user.email "zhangsan@example.com"
-```
+![](../images/git_bash_git_config_01.png)
 
-### SSH key 及 GPG key（可选）
+可以通过上面的图片你可以看出，我的粗手指导致的我邮箱写错了，别担心，这里是都可以进行修改的。
+可以通过 修改 如下文件保存退出后完成相关的配置修改。
+
+```shell
+vim ./git/config  # 抱歉，我这里不提供vim的相关教程。
+```
+![](../images/git_bash_git_config_02.png)
+
+修改完成之后保存退出，再次使用 git config --list 可以看到我带邮箱已经被修改回来了。
+![](../images/git_bash_git_config_03.png)
+
+
+### SSH key 或者 GPG key（可选）
 
 请参考 [GitHub SSH 帮助页面](https://help.github.com/en/articles/connecting-to-github-with-ssh)进行设置 ssh key，这样可以在每次 push 时免除输入密码。
 
+
+
 GPG 可进行加密及数字签名，请参考 [GitHub GPG key 帮助页面](https://help.github.com/en/articles/managing-commit-signature-verification)进行设置。
+
+简单来说就是执行ssh-keygen之后一通回车，然后吧 ~/.ssh/id_rsa.pub里面一大串内容复制到GitHub中的 个人设置里面的SSH Key里面就好了。这样Git Hub 就有了你的SSH公钥了。	
+
+![](../images/ssh-keygen_01.png)
+
+```shell
+ssh-keygen  # 之后一通回车 （严格来说其实人家有好多设置的，这为了新手方便就一通回车了。）
+
+cat ~/.ssh/id_rsa.pub 
+
+```
+之后就可以把里面的字符串 复制到github上面的个人设置里面了
+![](../images/ssh-keygen_02.png)
+
+![](../images/ssh-keygen_03.png)
+
+![](../images/ssh-keygen_04.png)
+
+
+## Stage 和 Working Directory
+
+```shell
+
+#TBD  Fine Fan 20201125- 00:00:00
+```
+
+
+
+
+
+
+
+## 基础配置
+
+
 
 ## clone 仓库
 
