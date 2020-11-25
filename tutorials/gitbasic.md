@@ -33,8 +33,9 @@
 > 更多 git 概念及技能请参考 [Pro Git](https://git-scm.com/book/zh/v2)。
 
 ## 创建Fork
-简单来说就是把你要翻译发linux.cn的相关库，在github上面复制一份，到你的主页里面。
+简单来说就是把你要翻译发linux.cn的相关库，在github上面复制一份到你的主页里面。
 这里我们拿[LCTT/LCRH](https://github.com/LCTT/LCRH)来举例:
+
 1. 登录[github](https://github.com)，然后打开[LCTT/LCRH](https://github.com/LCTT/LCRH)页面
 2. 点击页面中，右上角的Fork将LCTT账号相面的LCRH 库，复制到 自己的账号下一份。
 ![](../images/lcct_lcrh_fork_button.png)
@@ -68,11 +69,11 @@ git clone https://github.com/FineFan/LCRH.git
 
 ### Remote 的概念
 
-有几个是我们需要在GitHub的PR 模式中使用到的，先来接受Rmote的概念。
+有几个是我们需要在GitHub的PR 模式中使用到的，先来讲Rmote的概念。
 
 在你完成 git clone之后，他会创建一些默认的配置，其中一个就是Remote，简单来说就是说明你当前的仓库是从哪里来的。
 
-默认的远端 就叫做  **origin **
+默认的远端（remote） 就叫做  **origin **
 
 当进入到clone 好的仓库中后，可以使用 如下命令进行查看。
 
@@ -128,7 +129,9 @@ git branch -v
 ```
 如果你刚刚完成git clone的话默认情况下应该只有master分支。
 使用Windows上面的git bash的话会在命令提示符上面就有显示当前的分支名称。
-在git branch -v 的输入中也能够看到前面带有星号的 就是目录树所在的分支快照。
+有些命令行终端默认没有配置git分支的显示，此时我们就可以使用git branch -v ，在输出中也能够看到。
+
+前面带有星号的 就是目录树所在的分支快照。
 
 ![](../images/git_bash_git_branch_01.png)
 
@@ -172,8 +175,9 @@ git branch -d branch_2 # 删除分支 branch_3
 
 ## 用户名 、 邮箱、 SSK Key 的配置
 ### 用户信息
+之后就可以进入到该目录下面进行相关的配置和查看相关的信息了。
 
-使用 git 前需要先配置用户名及邮箱等基础信息，示例如下。
+首先配置的是提交时候的用户名 和 邮箱，这些配置会被记录到你提交的每一个 commit当中。
 
 ```
 cd LCRH
@@ -193,17 +197,16 @@ git config --list
 ```shell
 vim ./git/config  # 抱歉，我这里不提供vim的相关教程。
 ```
+
+
 ![](../images/git_bash_git_config_02.png)
 
 修改完成之后保存退出，再次使用 git config --list 可以看到我带邮箱已经被修改回来了。
 ![](../images/git_bash_git_config_03.png)
 
 
-### SSH key 或者 GPG key（可选）
 
-请参考 [GitHub SSH 帮助页面](https://help.github.com/en/articles/connecting-to-github-with-ssh)进行设置 ssh key，这样可以在每次 push 时免除输入密码。
-
-
+### SSH Key 配置
 
 GPG 可进行加密及数字签名，请参考 [GitHub GPG key 帮助页面](https://help.github.com/en/articles/managing-commit-signature-verification)进行设置。
 
@@ -213,9 +216,7 @@ GPG 可进行加密及数字签名，请参考 [GitHub GPG key 帮助页面](htt
 
 ```shell
 ssh-keygen  # 之后一通回车 （严格来说其实人家有好多设置的，这为了新手方便就一通回车了。）
-
 cat ~/.ssh/id_rsa.pub 
-
 ```
 之后就可以把里面的字符串 复制到github上面的个人设置里面了
 ![](../images/ssh-keygen_02.png)
@@ -244,7 +245,6 @@ git checkout -b fine_test_translate
 ```shell
 git add <你修改的文件>
 git commit -m "对你的修改做出一个简略的介绍"
-
 ```
 ![](../images/git_bash_translate_02.png)
 
@@ -285,6 +285,6 @@ git push    #之后将和并之后的代码更新到库中。
 
 # 本人能力有限
 本人能力有限，文章写的难免有所纰漏，如有发现，望不吝赐教。
-FineFan
+Fine Fan
 QQ:854413218
 E-mail: fine.fan@hotmail.com
