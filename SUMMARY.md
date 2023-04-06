@@ -9,6 +9,7 @@
 * [翻译步骤](guide/translation.md)
     * [web](guide/translation_web.md)
     * [桌面](guide/translation_local.md)
+    * [翻译流程示例](guide/translation_step_by_step.md)
 * [翻译帮助](guide/help/)  <!-- 如常见词列表 -->
 * [Git 基础操作](tutorials/gitbasic.md)
 * [Markdown 语法](tutorials/markdown.md)
